@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoisting Using Var</title>
+</head>
+<body>
+    <h2>Javascript Object Constructor</h2>
+    <p id="demo"></p>
+    <script>
+    function person(first, last,eye, age, nationality){
+      this.firstname = first;
+      this.lastname = last;
+      this.age = age;
+      this.eyeColor = eye;  
+    }
+    person.prototype.nationality = "Ghanaian";
+    const myGirlfriend = new person("Emily", "Lover", 21, "brown");
+    const myGirlfriend2 = new person("Fransisca", "Amanor", 27, "brown");
+
+    function michael(first, last, email, password, username, age, nationality){
+      this.firstname = first;
+      this.lastname = lastname;
+    }
+    michael.prototype.email = "kabandakpantimichael@gmail.com";
+    michael.prototype.password = "Jango@1724";
+    michael.prototype.username = "Jango_Soldier";
+    michael.prototype.age = 24;
+    michael.prototype.nationality = "Togolesse";
+
+    document.getElementById("demo").innerHTML = myGirlfriend2.firstname + " " + myGirlfriend2.lastname + " " + myGirlfriend2.age + " " + myGirlfriend2.eyeColor + " and she is a "+ myGirlfriend2.nationality;
+    </script>
+</body>
+</html>
