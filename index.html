@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio || Michael</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
   </head>
 
   <body>
@@ -19,7 +23,10 @@
             <li><a href="">Services</a></li>
             <li><a href="">Porfolio</a></li>
             <li><a href="">Contact</a></li>
+            <i class="fa solid fa-xmark icon fa-2x" onclick="closeMenu()"></i>
           </ul>
+          <i class="fa solid fa-bars icon fa-2x" onclick="openMenu()"></i>
+
         </nav>
 
         <div class="header_text">
@@ -27,110 +34,285 @@
           <h1>Hi, I'm<span>Jango Soldier </span> &hearts;</h1>
         </div>
       </div>
+    </section>
 
-      <!-- About Section -->
-      <section id="about">
-        <div class="about">
-          <div class="container">
-            <div class="row">
-              <div class="about_col-1">
-                <img src="./images/nurse.png" alt="" />
-              </div>
-              <div class="about_col-2">
-                <h1 class="subtitle">About <span>Me</span></h1>
-                <p class="about_description">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
-                  ducimus beatae illo? Vel ducimus numquam ipsum mollitia
-                  facilis quibusdam maiores repellendus, adipisci modi doloribus
-                  dicta consequuntur id voluptatum, deleniti, odit ratione
-                  itaque odio! Reprehenderit, minima.
+    <!-- About Section -->
+    <section id="about">
+      <div class="about">
+        <div class="container">
+          <div class="row">
+            <div class="about_col-1">
+              <img src="./images/nurse.png" alt="" />
+            </div>
+            <div class="about_col-2">
+              <h1 class="subtitle">About <span>Me</span></h1>
+              <p class="about_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                ducimus beatae illo? Vel ducimus numquam ipsum mollitia facilis
+                quibusdam maiores repellendus, adipisci modi doloribus dicta
+                consequuntur id voluptatum, deleniti, odit ratione itaque odio!
+                Reprehenderit, minima.
+              </p>
+
+              <div class="tab_titles">
+                <!-- 1st tab title -->
+                <p class="tab_links active_link" onclick="openTab('skills')">
+                  Skills
                 </p>
-
-                <div class="tab_titles">
-                  <!-- 1st tab title -->
-                  <p class="tab_links active_link " onclick="openTab('skills')">Skills</p>
-                  <!-- 2nd tab title -->
-                  <p class="tab_links" onclick="openTab('experience')">Experience</p>
-                  <!-- 3rd tab title -->
-                  <p class="tab_links" onclick="openTab('education')">Education</p>
-                  <!-- 4th tab title -->
-                  <p class="tab_links" onclick="openTab('hobby')">Hobbies</p>
-                </div>
-                <!-- Skills -->
-                <div class="tab_content active_tab" id="skills">
-                  <ul>
-                    <!-- 1st  -->
-                    <li><span>Full-Stack Web Developer</span><br>
+                <!-- 2nd tab title -->
+                <p class="tab_links" onclick="openTab('experience')">
+                  Experience
+                </p>
+                <!-- 3rd tab title -->
+                <p class="tab_links" onclick="openTab('education')">
+                  Education
+                </p>
+                <!-- 4th tab title -->
+                <p class="tab_links" onclick="openTab('hobby')">Hobbies</p>
+              </div>
+              <!-- Skills -->
+              <div class="tab_content active_tab" id="skills">
+                <ul>
+                  <!-- 1st  -->
+                  <li>
+                    <span>Full-Stack Web Developer</span><br />
                     Design, Develop, and Deploy Websites
-                    </li>
-                    <!-- 2nd -->
-                    <li><span>System Administration</span><br>
-                      Manages and Deploy Systems
-                      </li>
-                     <!-- 3rd -->
-                     <li><span>Ethical Hacking</span><br>
-                      Ethically hacks into customers and employee adipisicing
-                      </li>
-                  </ul>
-                </div>
-                <!-- Experience -->
-                <div class="tab_content" id="experience">
-                  <ul>
-                    <!-- 1st  -->
-                    <li><span>2018-Current</span><br>
+                  </li>
+                  <!-- 2nd -->
+                  <li>
+                    <span>System Administration</span><br />
+                    Manages and Deploy Systems
+                  </li>
+                  <!-- 3rd -->
+                  <li>
+                    <span>Ethical Hacking</span><br />
+                    Ethically hacks into customers and employee adipisicing
+                  </li>
+                </ul>
+              </div>
+              <!-- Experience -->
+              <div class="tab_content" id="experience">
+                <ul>
+                  <!-- 1st  -->
+                  <li>
+                    <span>2018-Current</span><br />
                     UI/UX Developer
-                    </li>
-                    <!-- 2nd -->
-                    <li><span>2015-2018</span><br>
-                      Service Provider Agent
-                      </li>
-                     <!-- 3rd -->
-                     <li><span>2012-2015</span><br>
-                      Printing Press Manager
-                      </li>
-                  </ul>
-                </div>
+                  </li>
+                  <!-- 2nd -->
+                  <li>
+                    <span>2015-2018</span><br />
+                    Service Provider Agent
+                  </li>
+                  <!-- 3rd -->
+                  <li>
+                    <span>2012-2015</span><br />
+                    Printing Press Manager
+                  </li>
+                </ul>
+              </div>
 
-                <!-- Education -->
-                <div class="tab_content" id="education">
-                  <ul>
-                    <!-- 1st  -->
-                    <li><span>2021-Current</span><br>
+              <!-- Education -->
+              <div class="tab_content" id="education">
+                <ul>
+                  <!-- 1st  -->
+                  <li>
+                    <span>2021-Current</span><br />
                     Web Designer
-                    </li>
-                    <!-- 2nd -->
-                    <li><span>2015-2018</span><br>
-                      High School
-                      </li>
-                     <!-- 3rd -->
-                     <li><span>2012-2015</span><br>
-                      Junior High School
-                      </li>
-                  </ul>
-                </div>
-                <!-- Hobbies -->
-                <div class="tab_content" id="hobby">
-                  <ul>
-                    <!-- 1st  -->
-                    <li><span>Fotball</span><br>
+                  </li>
+                  <!-- 2nd -->
+                  <li>
+                    <span>2015-2018</span><br />
+                    High School
+                  </li>
+                  <!-- 3rd -->
+                  <li>
+                    <span>2012-2015</span><br />
+                    Junior High School
+                  </li>
+                </ul>
+              </div>
+              <!-- Hobbies -->
+              <div class="tab_content" id="hobby">
+                <ul>
+                  <!-- 1st  -->
+                  <li>
+                    <span>Football</span><br />
                     I love to Play and Watch Football games
-                    </li>
-                    <!-- 2nd -->
-                    <li><span>Swimming</span><br>
-                      I lover swimming games but can't swimm
-                      </li>
-                     <!-- 3rd -->
-                     <li><span>Volleyball</span><br>
-                      I love to play volleyball at beaches
-                      </li>
-                  </ul>
-                </div>
+                  </li>
+                  <!-- 2nd -->
+                  <li>
+                    <span>Swimming</span><br />
+                    I lover swimming games but can't swimm
+                  </li>
+                  <!-- 3rd -->
+                  <li>
+                    <span>Volleyball</span><br />
+                    I love to play volleyball at beaches
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
     </section>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <h1 class="subtitle">My <span> Services</span></h1>
+        <div class="services_list">
+          <!-- 1st Service -->
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2 class="service_title">Web Development</h2>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              dolorum sint sapiente praesentium provident assumenda illum magni
+              a cupiditate explicabo!
+            </p>
+            <a href="" class="service_btn">Learn More</a>
+          </div>
+
+          <!-- 2nd Service -->
+          <div>
+            <i class="fa-solid fa-mobile"></i>
+            <h2 class="service_title">Mobile App Development</h2>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              dolorum sint sapiente praesentium provident assumenda illum magni
+              a cupiditate explicabo!
+            </p>
+            <a href="" class="service_btn">Learn More</a>
+          </div>
+
+          <!-- 3rd Service -->
+          <div>
+            <i class="fa-solid fa-crop-simple"></i>
+            <h2 class="service_title">UI/UX Design</h2>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              dolorum sint sapiente praesentium provident assumenda illum magni
+              a cupiditate explicabo!
+            </p>
+            <a href="" class="service_btn">Learn More</a>
+          </div>
+
+          <!-- 4th Service -->
+          <div>
+            <i class="fa-solid fa-server"></i>
+            <h2 class="service_title">Database Administrator</h2>
+            <p class="service_description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+              dolorum sint sapiente praesentium provident assumenda illum magni
+              a cupiditate explicabo!
+            </p>
+            <a href="" class="service_btn">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio">
+      <div class="portfolio">
+        <div class="container">
+          <h1 class="subtitle">My <span> Portfolio</span></h1>
+          <div class="work_list">
+            <!-- 1st Work -->
+            <div class="work">
+              <img src="./images/team.png" alt="" />
+              <div class="layer">
+                <h3>Real Estate App</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                  in dolor libero iusto tempora odit.
+                </p>
+                <a href="#"><i class="fa-solid fa-download"></i></a>
+              </div>
+            </div>
+
+            <!-- 2nd Work -->
+            <div class="work">
+              <img src="./images/team.png" alt="" />
+              <div class="layer">
+                <h3>Mishel's Commerce</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                  in dolor libero iusto tempora odit.
+                </p>
+                <a href="#"><i class="fa-solid fa-download"></i></a>
+              </div>
+            </div>
+            <!-- 3rd Work -->
+            <div class="work">
+              <img src="./images/team.png" alt="" />
+              <div class="layer">
+                <h3>Social Site</h3>
+                <p>
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui
+                  in dolor libero iusto tempora odit.
+                </p>
+                <a href="#"><i class="fa-solid fa-download"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section -->
+    <section id="contact">
+      <div class="contact">
+        <div class="container">
+          <div class="row">
+            <div class="contact-left">
+              <h1 class="subtitle">Contact Me</h1>
+              <p>
+                <i class="fa-solid fa-envelope"></i>
+                kabandakantimichael@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>+23354 454 1587</p>
+              <div class="social_icons">
+                <!-- 1st Icon -->
+                <a href="#" class="social_link">
+                  <i class="fa-brands fa-facebook-square"></i
+                ></a>
+                <!-- 2nd Icon -->
+                <a href="#" class="social_link"
+                  ><i class="fa-brands fa-twitter-square"></i
+                ></a>
+                <!-- 3rd Icon -->
+                <a href="#" class="social_link"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <!-- 4th Icon -->
+                <a href="#" class="social_link"
+                  ><i class="fa-brands fa-instagram-square"></i
+                ></a>
+              </div>
+              <a href="" class="btn btn_primary">Download CV</a>
+            </div>
+
+            <div class="contact-right">
+              <form action="#">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn_primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
     <script src="./js/main.js"></script>
   </body>
+  <footer>
+    <p class="copyright">
+      Copyright @ 2022 <a href="#">Mishel's Inc.</a>. All Rights Reserved.
+    </p>
+  </footer>
 </html>
